@@ -1,0 +1,231 @@
+body {
+    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*home*/
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 0px 0px 0px;
+}
+
+.header-text {
+    margin: 0;
+    padding: 20px;
+}
+
+#home-headline {
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-evenly;
+    gap: 20px;
+
+}
+
+.box {
+    background-color: #f5f2f2;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    transition: all .25s linear;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.4);
+    border-radius: 5%;
+}
+
+.box:hover{
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+}
+
+
+.home-boxes {
+    width: 300px;
+    height: 200px;
+    border-radius: 5% 5% 0% 0%;
+}
+
+
+.caption-box {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.caption-text {
+    font-size: 20px;
+}
+
+a:link {
+    color: #36454F;
+    text-decoration: none;
+}
+
+a:visited {
+    color:	#71797E;
+}
+/*size adjust*/
+@media (max-width: 1250px) {
+    .container {
+        flex-flow: column nowrap;
+        height: 100%;
+        padding: 20px;
+    }
+}
+
+/*nature with all header pics*/
+.image-wrapper {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.nature {
+    background-image: url(./img/nature.jpg);
+}
+
+.sky {
+    background-image: url(./img/sky.jpeg);
+}
+
+.forests {
+    background-image: url(./img/forest.jpg);
+}
+
+.exercise {
+    background-image: url(./img/exercise.jpg);
+}
+
+.picnics {
+    background-image: url(./img/picnic.jpg);
+}
+
+.cooking {
+    background-image: url(./img/cooking.jpg);
+}
+
+.interior {
+    background-image: url(./img/interior.jpg);
+}
+
+.header-text-box {
+    background-color: rgba(0,0,0,0.50);
+    width: 100%;
+    color: 	#D3D3D3;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.imgandtext-wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.left-img {
+    width: 500px;
+    height: 300px;
+    float: left;
+    padding: 0px 20px 0px 0px;
+}
+
+.picture-description {
+    line-height: 150%;
+    padding: 0px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    font-weight: 100;
+}
+
+.right-img {
+    width: 500px;
+    height: 300px;
+    float: right;
+}
+
+footer {
+    clear: both;
+    padding: 5px 0px 0px 0px;
+}
+
+
+
+#forest-craigside {
+    width: 400px;
+    height: 450px;
+}
+
+#pasta {
+    width: 500px;
+    height: 400px;
+}
+
+.navbar {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 10px 10px 10px 0px;
+    font-size: 20px;
+}
+
+.active {
+    font-weight: 700;
+}
+
+/*media query for phone size on individual pagees (not index)*/
+@media (max-width: 520px) {
+    h3 {
+        padding-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .image-wrapper {
+        flex: 1 0 100%;
+    }
+
+    .imgandtext-wrapper {
+        width: 100%;
+    }
+
+    .left-img, .right-img {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    #forest-craigside {
+        width: 100%;
+    }
+
+    #pasta {
+        width: 100%;
+    }
+
+    .navbar {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+    }
+}
